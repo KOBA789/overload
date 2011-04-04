@@ -29,6 +29,8 @@ var overload = function (args) {
           case 'array':
             return val.some(arguments.callee);
             break;
+          default:
+            return true;
         }
       }) && this || run();
     }
